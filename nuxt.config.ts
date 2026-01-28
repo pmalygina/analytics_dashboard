@@ -37,6 +37,6 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: false, // отключаем для production build (vue-tsc 1.x не совместим с TS 5.4+)
+    typeCheck: false,
   },
 })
