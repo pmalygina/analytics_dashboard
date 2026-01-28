@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2026-01-28',
   devtools: { enabled: true },
 
   css: ['vuetify/styles', '@mdi/font/css/materialdesignicons.min.css', '~/src/app/styles/main.css'],
@@ -37,6 +37,6 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: true,
+    typeCheck: false, // отключаем для production build (vue-tsc 1.x не совместим с TS 5.4+)
   },
 })
